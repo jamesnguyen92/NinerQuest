@@ -16,7 +16,7 @@ public class Building_List extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_building__list);
 
-        Spinner spinner = (Spinner) findViewById(R.id.building_list);
+        Spinner spinner = (Spinner) findViewById(R.id.building_list_spinner);
 // Create an ArrayAdapter using the string array and a default spinner layout
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
                 R.array.building_list_array, android.R.layout.simple_spinner_item);

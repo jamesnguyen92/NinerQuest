@@ -4,14 +4,11 @@
     <string name="title_activity_buildings_list">BuildingsList</string>
 
     <string-array name="reasons_array">
-        <item>Mercury</item>
-        <item>Venus</item>
-        <item>Earth</item>
-        <item>Mars</item>
-        <item>Jupiter</item>
-        <item>Saturn</item>
-        <item>Uranus</item>
-        <item>Neptune</item>
+        <item>Fundraising</item>
+        <item>Cultural</item>
+        <item>Study Group</item>
+        <item>Campus Events</item>
+        <item>Others</item>
     </string-array>
 
     <string-array name="building_list_array">
