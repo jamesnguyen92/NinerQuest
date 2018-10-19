@@ -2,4 +2,27 @@
     <string name="app_name">My Application</string>
     <string name="title_activity_ar">AR</string>
     <string name="title_activity_buildings_list">BuildingsList</string>
+
+    <string-array name="reasons_array">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
+
+    <string-array name="building_list_array">
+        <item>Friday</item>
+        <item>Colvard</item>
+        <item>Fretwell</item>
+        <item>Student Union</item>
+        <item>Woordward</item>
+        <item>Belk Gym</item>
+        <item>Rowe</item>
+        <item>Denny</item>
+    </string-array>
+    <string name="title_activity_create_events">Create_events</string>
 </resources>

@@ -8,14 +8,15 @@
 
 
     <android.support.design.widget.CoordinatorLayout
-        android:id="@+id/spinner1"
+        android:id="@+id/building_list"
         android:layout_width="157dp"
         android:layout_height="wrap_content"
         android:background="@android:drawable/btn_dropdown"
+        app:layout_constraintBottom_toTopOf="@+id/StartNavPage"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="75dp" />
+        app:layout_constraintTop_toBottomOf="@+id/textLocTitle" />
 
     <Button
         android:id="@+id/StartNavPage"
@@ -27,7 +28,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner1" />
+        app:layout_constraintTop_toBottomOf="@+id/building_list" />
 
     <TextView
         android:id="@+id/textLocTitle"
