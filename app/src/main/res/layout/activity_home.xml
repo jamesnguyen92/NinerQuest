@@ -81,7 +81,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/imageedit_1_7025059033" />
 
-    <Button
+    <!--<Button
         android:id="@+id/angry_btn"
 
         android:text="Button"
@@ -95,5 +95,5 @@
         android:shadowDx="0"
         android:shadowDy="0"
         android:shadowRadius="5"/>
-
+>!-->
 </android.support.constraint.ConstraintLayout>
