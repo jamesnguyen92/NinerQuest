@@ -3,21 +3,20 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="#ccd9c8"
+    android:background="#D2B48C"
     android:layout_height="match_parent"
     tools:context=".Home">
 
 
     <Button
         android:id="@+id/Free_Roam"
+        android:textAlignment="gravity"
+        android:gravity="center"
         android:layout_width="200dp"
         android:layout_height="30dp"
         android:layout_marginBottom="15dp"
         android:background="#126319"
-        android:gravity="center"
         android:text="Free Roam"
-        android:textAlignment="gravity"
-        android:textColor="@android:color/background_light"
         app:layout_constraintBottom_toTopOf="@+id/MAP"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -29,7 +28,6 @@
         android:layout_marginBottom="15dp"
         android:background="#126319"
         android:text="Events"
-        android:textColor="@android:color/background_light"
         app:layout_constraintBottom_toTopOf="@+id/Contact"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -42,7 +40,6 @@
         android:layout_marginBottom="15dp"
         android:background="#126319"
         android:text="Navigation"
-        android:textColor="@android:color/background_light"
         app:layout_constraintBottom_toTopOf="@+id/Free_Roam"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -56,7 +53,6 @@
         android:layout_marginBottom="56dp"
         android:background="#126319"
         android:text="Contact Us"
-        android:textColor="@android:color/background_light"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -68,7 +64,6 @@
         android:layout_marginBottom="15dp"
         android:background="#126319"
         android:text="MAP"
-        android:textColor="@android:color/background_light"
         app:layout_constraintBottom_toTopOf="@+id/Events"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
