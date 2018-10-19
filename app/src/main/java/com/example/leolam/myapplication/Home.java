@@ -27,6 +27,7 @@ public class Home extends AppCompatActivity {
         Button Navigation = (Button)findViewById(R.id.Navigation);
         Button Events = (Button)findViewById(R.id.Events);
         Button Contact = (Button)findViewById(R.id.Contact);
+        Button Map = (Button) findViewById(R.id.MAP);
 
         //Free Roam Button to AR Page
         Free_Roam.setOnClickListener(new View.OnClickListener() {
@@ -68,6 +69,15 @@ public class Home extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent signup = new Intent(Home.this, Contact.class);
+                startActivity(signup);
+            }
+        });
+
+        //Map Button to Map_main page
+        Map.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent signup = new Intent(Home.this, map_main.class);
                 startActivity(signup);
             }
         });
