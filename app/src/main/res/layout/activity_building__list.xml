@@ -10,7 +10,7 @@
 
     <Spinner
         android:id="@+id/building_list_spinner"
-        android:layout_width="157dp"
+        android:layout_width="219dp"
         android:layout_height="wrap_content"
         android:background="@android:drawable/btn_dropdown"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -26,7 +26,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="214dp"
         android:layout_marginBottom="63dp"
+        android:background="#126319"
         android:text="Go!"
+        android:textColor="@color/cast_expanded_controller_text_color"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -36,8 +38,8 @@
 
     <TextView
         android:id="@+id/textLocTitle"
-        android:layout_width="267dp"
-        android:layout_height="33dp"
+        android:layout_width="314dp"
+        android:layout_height="66dp"
         android:layout_marginStart="68dp"
         android:layout_marginLeft="68dp"
         android:layout_marginTop="26dp"
