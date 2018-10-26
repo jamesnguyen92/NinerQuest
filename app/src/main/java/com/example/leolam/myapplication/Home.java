@@ -18,7 +18,7 @@ public class Home extends AppCompatActivity {
 
     public static final int MY_PERMISSIONS_REQUEST_CAMERA = 55;
     static final int REQUEST_IMAGE_CAPTURE = 98;
-
+    // THIS IS A TEST TO SEE IF MERGE WORKS OK!
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
