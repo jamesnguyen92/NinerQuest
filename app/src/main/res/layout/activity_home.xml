@@ -3,88 +3,74 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="#ccd9c8"
+    android:background="@drawable/background"
     android:layout_height="match_parent"
     tools:context=".Home">
 
-    <Button
-        android:id="@+id/Free_Roam"
-        android:layout_width="200dp"
-        android:layout_height="30dp"
-        android:layout_marginBottom="15dp"
-        android:background="#126319"
-        android:gravity="center"
-        android:text="Free Roam"
-        android:textAlignment="gravity"
-        android:textColor="@android:color/background_light"
-        app:layout_constraintBottom_toTopOf="@+id/MAP"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/Events"
-        android:layout_width="200dp"
-        android:layout_height="30dp"
-        android:layout_marginBottom="15dp"
-        android:background="#126319"
-        android:text="Events"
-        android:textColor="@android:color/background_light"
-        app:layout_constraintBottom_toTopOf="@+id/Contact"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/Navigation"
-        android:layout_width="200dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="300dp"
-        android:layout_marginBottom="15dp"
-        android:background="#126319"
-        android:text="Navigation"
-        android:textColor="@android:color/background_light"
-        app:layout_constraintBottom_toTopOf="@+id/Free_Roam"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <Button
-        android:id="@+id/Contact"
-        android:layout_width="200dp"
-        android:layout_height="30dp"
-        android:layout_marginBottom="56dp"
-        android:background="#126319"
-        android:text="Contact Us"
-        android:textColor="@android:color/background_light"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/MAP"
-        android:layout_width="200dp"
-        android:layout_height="29dp"
-        android:layout_marginBottom="15dp"
-        android:background="#126319"
-        android:text="MAP"
-        android:textColor="@android:color/background_light"
-        app:layout_constraintBottom_toTopOf="@+id/Events"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="368dp"
-        android:layout_height="346dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
+        android:layout_width="235dp"
+        android:layout_height="176dp"
+        android:layout_marginTop="4dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/imageedit_1_7025059033" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@drawable/navigation" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@drawable/freeroam" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="11dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:srcCompat="@drawable/map" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:srcCompat="@drawable/events" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="11dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        app:srcCompat="@drawable/contactus" />
 
     <!--<Button
         android:id="@+id/angry_btn"
