@@ -1,51 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ccd9c8"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#d4fcc4"
     tools:context=".Contact">
 
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="284dp"
-        android:layout_height="237dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="27dp"
-        android:layout_marginEnd="60dp"
-        android:layout_marginRight="60dp"
-        android:ems="10"
-        android:hint="Enter..."
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/contactText" />
 
     <TextView
-        android:id="@+id/contactText"
-        android:layout_width="290dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="33dp"
-        android:layout_marginEnd="54dp"
-        android:layout_marginRight="54dp"
-        android:text="Please enter message to be sent to us."
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
         android:textColor="@android:color/black"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Contact Us"
+        android:paddingBottom="30dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Subject:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_marginBottom="5dp"/>
+
+    <EditText
+        android:id="@+id/edit_text_subject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailSubject"
+        android:background="@drawable/back"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Message:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_marginBottom="5dp"
+        android:paddingTop="15dp"/>
+
+    <EditText
+        android:id="@+id/edit_text_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="10"
+        android:background="@drawable/back"
+        android:gravity="start|top"/>
 
     <Button
+        android:id="@+id/button_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="#126319"
+        android:text="send"
+        android:textColor="@android:color/white" />
+
+    <!--<Button
         android:id="@+id/btnSend"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="148dp"
         android:layout_marginLeft="148dp"
-        android:layout_marginTop="38dp"
         android:layout_marginEnd="148dp"
         android:layout_marginRight="148dp"
         android:background="#126319"
@@ -53,5 +71,7 @@
         android:textColor="@color/cast_expanded_controller_text_color"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
-</android.support.constraint.ConstraintLayout>
+        tools:layout_editor_absoluteY="405dp" /> -->
+
+
+</LinearLayout>
