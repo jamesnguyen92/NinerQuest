@@ -148,7 +148,7 @@ public class map_main extends AppCompatActivity
         location = (Location) lm.getLastKnownLocation(LocationManager.GPS_PROVIDER);
         LatLng gilgit = new LatLng(location.getLongitude(), location.getLatitude());
        //LatLng gilgit = new LatLng(35.307076, -80.735170);
-        mMap.addMarker(new MarkerOptions().position(gilgit).title("University of North Carolina at Charlotte"));
+       // mMap.addMarker(new MarkerOptions().position(gilgit).title("University of North Carolina at Charlotte"));
         mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(gilgit, 15.0f));
     }
 
