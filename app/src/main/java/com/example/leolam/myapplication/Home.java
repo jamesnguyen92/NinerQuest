@@ -12,22 +12,23 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class Home extends AppCompatActivity {
 
     public static final int MY_PERMISSIONS_REQUEST_CAMERA = 55;
     static final int REQUEST_IMAGE_CAPTURE = 98;
-
+    // THIS IS A TEST TO SEE IF MERGE WORKS OK!
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        Button Free_Roam = (Button)findViewById(R.id.Free_Roam);
-        Button Navigation = (Button)findViewById(R.id.Navigation);
-        Button Events = (Button)findViewById(R.id.Events);
-        Button Contact = (Button)findViewById(R.id.Contact);
-        Button Map = (Button) findViewById(R.id.MAP);
+        ImageView Free_Roam = findViewById(R.id.imageView4);
+        ImageView Events = findViewById(R.id.imageView7);
+        ImageView Contact = findViewById(R.id.imageView8);
+        ImageView Map = findViewById(R.id.imageView6);
+        ImageView Navigation = findViewById(R.id.imageView2);
 
         //Free Roam Button to AR Page
         Free_Roam.setOnClickListener(new View.OnClickListener() {

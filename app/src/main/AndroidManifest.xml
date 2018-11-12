@@ -36,9 +36,16 @@
         <activity
             android:name=".AR_Page"
             android:label="@string/app_name" />
-        <activity android:name=".Building_List" />
+        <activity android:name=".Building_List" >
+            <intent-filter>
+                <action android:name="android.intent.action.PICK_ACTIVITY." />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
         <activity android:name=".Events" />
         <activity android:name=".Contact" />
+        <activity android:name=".Maps_Activity"/>
         <activity
             android:name=".Create_events"
             android:label="@string/title_activity_create_events"

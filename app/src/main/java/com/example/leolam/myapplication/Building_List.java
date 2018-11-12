@@ -37,7 +37,9 @@ public class Building_List extends AppCompatActivity {
             @TargetApi(Build.VERSION_CODES.M)
             public void onClick(View view) {
 
-                ActivityCompat.requestPermissions(Building_List.this, new String[]{Manifest.permission.CAMERA}, MY_PERMISSIONS_REQUEST_CAMERA);
+                //ActivityCompat.requestPermissions(Building_List.this, new String[]{Manifest.permission.CAMERA}, MY_PERMISSIONS_REQUEST_CAMERA);
+                Intent signup = new Intent(Building_List.this, Maps_Activity.class);
+                startActivity(signup);
             }
 
         });
@@ -53,7 +55,6 @@ public class Building_List extends AppCompatActivity {
 // Apply the adapter to the spinner
         spinner.setAdapter(adapter);
     }
-
 
     //Ask Permission to Use Camera
     @Override
