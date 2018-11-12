@@ -2,6 +2,7 @@ package com.example.leolam.myapplication;
 
 import android.content.Context;
 import android.content.pm.PackageManager;
+import android.location.Criteria;
 import android.location.Location;
 import android.location.LocationManager;
 import android.location.LocationListener;
@@ -145,10 +146,16 @@ public class map_main extends AppCompatActivity
                     MY_PERMISSION_ACCESS_FINE_LOCATION );
         }
         LocationManager lm = (LocationManager)getSystemService(Context.LOCATION_SERVICE);
+        String provider = lm.getBestProvider(new Criteria(), true);
+        location = (Location) lm.getLastKnownLocation(provider);
+        if(location.equals(null)){
+            location = lm.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
+        }
+        LatLng gilgit = new LatLng(location.getLatitude(), location.getLongitude());
+        //LatLng gilgit = new LatLng(35.307076, -80.735170); UNC Charlotte location
+        mMap.addMarker(new MarkerOptions().position(gilgit).title(""));
         location = (Location) lm.getLastKnownLocation(LocationManager.GPS_PROVIDER);
         LatLng gilgit = new LatLng(location.getLongitude(), location.getLatitude());
-       //LatLng gilgit = new LatLng(35.307076, -80.735170);
-       // mMap.addMarker(new MarkerOptions().position(gilgit).title("University of North Carolina at Charlotte"));
         mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(gilgit, 15.0f));
     }
 
