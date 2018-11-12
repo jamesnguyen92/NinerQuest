@@ -152,8 +152,10 @@ public class map_main extends AppCompatActivity
             location = lm.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
         }
         LatLng gilgit = new LatLng(location.getLatitude(), location.getLongitude());
-        //LatLng gilgit = new LatLng(35.307076, -80.735170);
+        //LatLng gilgit = new LatLng(35.307076, -80.735170); UNC Charlotte location
         mMap.addMarker(new MarkerOptions().position(gilgit).title(""));
+        location = (Location) lm.getLastKnownLocation(LocationManager.GPS_PROVIDER);
+        LatLng gilgit = new LatLng(location.getLongitude(), location.getLatitude());
         mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(gilgit, 15.0f));
     }
 
