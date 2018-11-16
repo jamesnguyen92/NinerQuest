@@ -2,6 +2,7 @@ package com.example.leolam.myapplication;
 
 import android.content.Context;
 import android.content.pm.PackageManager;
+import android.location.Criteria;
 import android.location.Location;
 import android.location.LocationManager;
 import android.location.LocationListener;
@@ -14,19 +15,19 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 
 import android.content.Intent;
 
+import com.example.leolam.myapplication.Activities.ContactActivity;
+import com.example.leolam.myapplication.Activities.EventsActivity;
+import com.example.leolam.myapplication.Activities.HomeActivity;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapView;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
-import com.google.android.gms.location.LocationServices;
 
 
 
@@ -115,19 +116,19 @@ public class map_main extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_home) {
-            //Home Button to Home page
-                    Intent signup = new Intent(map_main.this, Home.class);
+            //HomeActivity Button to HomeActivity page
+                    Intent signup = new Intent(map_main.this, HomeActivity.class);
                     startActivity(signup);
         } else if (id == R.id.nav_roam) {
 
         } else if (id == R.id.nav_events) {
-            //Events Button to Events Page
-                    Intent signup = new Intent(map_main.this, Events.class);
+            //EventsActivity Button to EventsActivity Page
+                    Intent signup = new Intent(map_main.this, EventsActivity.class);
                     startActivity(signup);
 
         } else if (id == R.id.nav_contact) {
-            //Contact Button to Contact Page
-                    Intent signup = new Intent(map_main.this, Contact.class);
+            //ContactActivity Button to ContactActivity Page
+                    Intent signup = new Intent(map_main.this, ContactActivity.class);
                     startActivity(signup);
         }
 
@@ -145,10 +146,16 @@ public class map_main extends AppCompatActivity
                     MY_PERMISSION_ACCESS_FINE_LOCATION );
         }
         LocationManager lm = (LocationManager)getSystemService(Context.LOCATION_SERVICE);
+        String provider = lm.getBestProvider(new Criteria(), true);
+        location = (Location) lm.getLastKnownLocation(provider);
+        if(location.equals(null)){
+            location = lm.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
+        }
+        LatLng gilgit = new LatLng(location.getLatitude(), location.getLongitude());
+        //LatLng gilgit = new LatLng(35.307076, -80.735170); UNC Charlotte location
+        mMap.addMarker(new MarkerOptions().position(gilgit).title(""));
         location = (Location) lm.getLastKnownLocation(LocationManager.GPS_PROVIDER);
-        LatLng gilgit = new LatLng(location.getLongitude(), location.getLatitude());
-       //LatLng gilgit = new LatLng(35.307076, -80.735170);
-       // mMap.addMarker(new MarkerOptions().position(gilgit).title("University of North Carolina at Charlotte"));
+        gilgit = new LatLng(location.getLongitude(), location.getLatitude());
         mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(gilgit, 15.0f));
     }
 

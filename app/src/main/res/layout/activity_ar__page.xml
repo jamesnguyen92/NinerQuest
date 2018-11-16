@@ -5,6 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ccd9c8"
-    tools:context=".AR_Page">
+    tools:context=".Maps_Activity">
 
+    <fragment
+        android:id="@+id/map2"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.leolam.myapplication.Maps_Activity" />
 </android.support.constraint.ConstraintLayout>
