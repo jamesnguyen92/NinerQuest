@@ -1,35 +1,43 @@
 {
   "project_info": {
-    "project_number": "490713751095",
-    "firebase_url": "https://ninerquest-app.firebaseio.com",
-    "project_id": "ninerquest-app",
-    "storage_bucket": "ninerquest-app.appspot.com"
+    "project_number": "520932919828",
+    "firebase_url": "https://ninerquest-1539976953444.firebaseio.com",
+    "project_id": "ninerquest-1539976953444",
+    "storage_bucket": "ninerquest-1539976953444.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:490713751095:android:e90f4943531acf06",
+        "mobilesdk_app_id": "1:520932919828:android:e90f4943531acf06",
         "android_client_info": {
           "package_name": "com.example.leolam.myapplication"
         }
       },
       "oauth_client": [
         {
-          "client_id": "490713751095-rh97do2uetokc7rt88o0q08lljfo0g1h.apps.googleusercontent.com",
+          "client_id": "520932919828-jdf7fmpjnuhccatkonfk9jpn53rv2ris.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.example.leolam.myapplication",
-            "certificate_hash": "b50335d0962f874ede2036869c7ae44cba8ba701"
+            "certificate_hash": "36b2b8be114d02893130d4a137a745235a7b5025"
           }
         },
         {
-          "client_id": "490713751095-8bc08tq63hrdf1vo4pl3l8ga238vq8f2.apps.googleusercontent.com",
+          "client_id": "520932919828-o2bmmr93r03igtffsitf9692m6k3a7h3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.leolam.myapplication",
+            "certificate_hash": "ecbc804b991033e88f4b2567d0b741d9bd5826c2"
+          }
+        },
+        {
+          "client_id": "520932919828-9bm506tcjjfneredcn8qvjelrnebrrv1.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCVl9ib3sM2HGz_0s6omG8WrcsseN_xDNw"
+          "current_key": "AIzaSyARzp_nSlYR8jSQB7U-rnrNg0_SbFZ0R4c"
         }
       ],
       "services": {
@@ -40,7 +48,7 @@
           "status": 2,
           "other_platform_oauth_client": [
             {
-              "client_id": "490713751095-8bc08tq63hrdf1vo4pl3l8ga238vq8f2.apps.googleusercontent.com",
+              "client_id": "520932919828-9bm506tcjjfneredcn8qvjelrnebrrv1.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
