@@ -11,6 +11,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ListView;
 import android.widget.Spinner;
 
 import com.example.leolam.myapplication.Maps_Activity;
@@ -29,6 +30,7 @@ public class BuildingListActivity extends AppCompatActivity {
 
     public static final int MY_PERMISSIONS_REQUEST_CAMERA = 55;
     static final int REQUEST_IMAGE_CAPTURE = 98;
+    private ListView listView;
 
     FirebaseDatabase database = FirebaseDatabase.getInstance();
     DatabaseReference getmDatabase = database.getReference();
@@ -74,6 +76,8 @@ public class BuildingListActivity extends AppCompatActivity {
                 addressAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 // Apply the adapter to the spinner
                 spinner.setAdapter(addressAdapter);
+
+                
             }
 
             @Override
